@@ -17,7 +17,7 @@ function App() {
 
             <button onClick={btnOnClickHandler}>Start test</button>
             {testVisible && (
-                <div>
+                <div className="test-container">
                     <Test />
                 </div>
             )}
