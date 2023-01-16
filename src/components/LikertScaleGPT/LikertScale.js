@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./LikertScale.css"
 
-const LikertScale = () => {
+const LikertScaleGPT = () => {
     const options = ["-2", "-1", "0", "1", "2"]
     const [selectedOption, setSelectedOption] = useState(null)
 
@@ -53,4 +53,4 @@ const LikertScale = () => {
     )
 }
 
-export default LikertScale
+export default LikertScaleGPT

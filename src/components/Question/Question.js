@@ -7,7 +7,7 @@ const Question = ({ question, options }) => {
         <div>
             <p>{question}</p>
             {options.map((item) => (
-                <button> {item} </button>
+                <button className="button"> {item} </button>
             ))}
         </div>
     )

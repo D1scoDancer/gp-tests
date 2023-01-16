@@ -1,4 +1,5 @@
 import "./App.css"
+import LikertScale from "./components/LikertScale/LikertScale"
 
 import Menu from "./components/Menu/Menu"
 import Test from "./components/Test/Test"
@@ -6,8 +7,9 @@ import Test from "./components/Test/Test"
 function App() {
     return (
         <div className="App">
-            {/* <Menu /> */}
-            <Test />
+            {/* <Menu />
+            <Test /> */}
+            <LikertScale />
         </div>
     )
 }
