@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react"
 
-import Question from "../Question/Question"
 import quizData from "../data"
 import LikertScale from "../LikertScale/LikertScale"
 
 const Test = () => {
+    /* Dont need this unless we want to show questions 1 by 1
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [state, setState] = useState({ question: "", options: [] })
 
@@ -19,6 +19,7 @@ const Test = () => {
     useEffect(() => {
         loadQuizData()
     })
+    */
 
     return (
         <div>
