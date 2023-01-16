@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import Question from "../Question/Question"
 import quizData from "../data"
+import LikertScale from "../LikertScale/LikertScale"
 
 const Test = () => {
     const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -24,7 +25,8 @@ const Test = () => {
             <ol>
                 {quizData.map((item) => (
                     <li>
-                        <Question
+                        <LikertScale
+                            id={item.id}
                             question={item.question}
                             options={item.options}
                         />
