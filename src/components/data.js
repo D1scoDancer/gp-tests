@@ -1,4 +1,4 @@
-export const quizData = [
+const quizData = [
     {
         id: 0,
         question:
@@ -27,7 +27,7 @@ export const quizData = [
         ],
     },
     {
-        id: 3,
+        id: 2,
         question:
             "В рабочие дни по утрам у меня плохое настроение, я считаюдни и часы до выходных",
         options: [
@@ -41,7 +41,7 @@ export const quizData = [
         ],
     },
     {
-        id: 4,
+        id: 3,
         question: "Я доволен (довольна) результатами моей работы",
         options: [
             "Никогда",
@@ -54,7 +54,7 @@ export const quizData = [
         ],
     },
     {
-        id: 5,
+        id: 4,
         question:
             "Меня утомляют люди, с  которыми я работаю (подчиненные,клиенты, реципиенты), я стремлюсь свести время общения с ними до минимума",
         options: [
@@ -68,7 +68,7 @@ export const quizData = [
         ],
     },
     {
-        id: 6,
+        id: 5,
         question:
             "Я чувствую в себе большой заряд бодрости, эмоциональной и творческой энергии на работе и после нее",
         options: [
@@ -82,7 +82,7 @@ export const quizData = [
         ],
     },
     {
-        id: 7,
+        id: 6,
         question:
             "Я умею находить правильные решения в  трудных или конфликтных ситуациях на работе и вне ее",
         options: [
@@ -96,7 +96,7 @@ export const quizData = [
         ],
     },
     {
-        id: 8,
+        id: 7,
         question:
             "Я чувствую потерю интереса и апатию по отношению к моей работе",
         options: [
@@ -110,7 +110,7 @@ export const quizData = [
         ],
     },
     {
-        id: 9,
+        id: 8,
         question: "Я умею внести «искру» (творчество) в свою работу",
         options: [
             "Никогда",
@@ -123,3 +123,5 @@ export const quizData = [
         ],
     },
 ]
+
+export default quizData

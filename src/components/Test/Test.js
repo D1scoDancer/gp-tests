@@ -1,16 +1,36 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 
 import Question from "../Question/Question"
+import quizData from "../data"
 
 const Test = () => {
+    const [currentQuestion, setCurrentQuestion] = useState(0)
+    const [state, setState] = useState({ question: "", options: [] })
+
+    const loadQuizData = () => {
+        setState((prevState) => ({
+            ...prevState,
+            question: quizData[currentQuestion].question,
+            options: quizData[currentQuestion].options,
+        }))
+    }
+
+    useEffect(() => {
+        loadQuizData()
+    })
+
     return (
         <div>
-            <h4>Test</h4>
-            <Question />
-            <Question />
-            <Question />
-            <Question />
-            <Question />
+            <ol>
+                {quizData.map((item) => (
+                    <li>
+                        <Question
+                            question={item.question}
+                            options={item.options}
+                        />
+                    </li>
+                ))}
+            </ol>
         </div>
     )
 }

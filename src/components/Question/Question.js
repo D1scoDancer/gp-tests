@@ -2,10 +2,13 @@ import React from "react"
 
 import "./Question.css"
 
-const Question = () => {
+const Question = ({ question, options }) => {
     return (
         <div>
-            <p className="question">Question</p>
+            <p>{question}</p>
+            {options.map((item) => (
+                <button> {item} </button>
+            ))}
         </div>
     )
 }
