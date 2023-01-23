@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-import quizData from "../data"
+import quizData from "../../data"
 import LikertScale from "../LikertScale/LikertScale"
 
 const Test = () => {
