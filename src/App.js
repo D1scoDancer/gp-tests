@@ -1,5 +1,5 @@
 import "./App.css"
-import React, { Component, useState } from "react"
+import React, { useState } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 import Menu from "./components/Menu/Menu"
@@ -12,7 +12,7 @@ import TestCard from "./components/TestCard"
 function App() {
     const [testVisible, setTestVisible] = useState(false)
 
-    const btnOnClickHandler = () => {
+    const btn0OnClickHandler = () => {
         setTestVisible(!testVisible)
     }
 
@@ -26,10 +26,18 @@ function App() {
                     <Row>
                         {siteData.map((data) => (
                             <Col xs={3} className="mb-5" key={`${data.id}`}>
-                                <TestCard data={data} />
+                                <TestCard
+                                    data={data}
+                                    toggle0={btn0OnClickHandler}
+                                />
                             </Col>
                         ))}
                     </Row>
+                    {testVisible && (
+                        <Row className="mt-5">
+                            <Test quizData={quizData} />
+                        </Row>
+                    )}
                 </Container>
             </body>
         </html>
